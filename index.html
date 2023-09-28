@@ -7,13 +7,44 @@
     <title>billionaire-diary</title>
     <!-- tailwind css link are here -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome link -->
+    <script src="https://kit.fontawesome.com/81b6252507.js" crossorigin="anonymous"></script>
+    <style>
+        .text-shadow-custom {
+            text-shadow: 3px 3px 3px sandybrown;
+        }
+    </style>
 </head>
 
-<body>
-    <h1 id="hello">Hello World!!</h1>
+<body class="bg-gray-100">
+    <!-- <h1 id="hello">Hello World!!</h1> -->
+    <header class="container mx-auto mt-8 flex justify-between">
+        <span class="cursor-pointer flex items-end">
+            <i class="fa-solid fa-arrow-left"></i>
+        </span>
+        <div>
+            <h2 class="text-slate-950 text-lg font-bold">Richest by industry</h2>
+            <h3 class="text-center text-slate-700 mt-2">(Technology)</h3>
+        </div>
+        <img class="w-24 cursor-pointer" src="images/logo/logo1.svg" alt="">
+    </header>
+    <main class="mt-2 p-8 rounded container mx-auto bg-slate-400">
+        <section class="grid grid-cols-3 gap-5" id="billion-diary-container">
 
+        </section>
+        <div class="text-center hidden" id="see-more-control">
+            <button id="see-more-btn"
+                class="mt-12 text-2xl text-neutral-100 px-16 py-4 bg-slate-800 rounded-xl hover:bg-sky-700">Load
+                More</button>
+        </div>
+        <div class="text-center hidden" id="back-defult-control">
+            <button id="back-defult-btn"
+                class="mt-12 text-2xl text-neutral-100 px-16 py-4 bg-slate-800 rounded-xl hover:bg-sky-700">
+                Back Defult</button>
+        </div>
+    </main>
     <!-- js apply -->
-    <script src="js/script.js"></script>
+    <script src=" js/script.js"></script>
 </body>
 
 </html>
